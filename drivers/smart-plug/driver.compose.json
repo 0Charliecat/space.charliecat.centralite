@@ -1,0 +1,31 @@
+{
+  "name": {
+    "en": "Control Outlet",
+    "nl": "Draadloos Stopcontact",
+    "de": "Drahtlose Steckdose"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "zigbee": {
+    "manufacturerName": "CentraLite",
+    "productId": [
+      "3200-fr"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          4,
+          5,
+          6
+        ]
+      }
+    }
+  },
+  "images": {
+    "large": "/drivers/control_outlet/assets/images/large.png",
+    "small": "/drivers/control_outlet/assets/images/small.png"
+  }
+}
