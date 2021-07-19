@@ -1,0 +1,22 @@
+{
+  "id": "space.charliecat.centralite",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "name": {
+    "en": "CentraLite"
+  },
+  "brandColor": "#3DBCD1",
+  "description": {
+    "en": ""
+  },
+  "category": [
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+}
