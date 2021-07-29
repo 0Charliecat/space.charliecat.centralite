@@ -78,7 +78,22 @@ class WatachSensa extends ZigBeeDeviceDebug {
 					minChange: 1, // Report when value changed by 1
 				},
 			},
-		});		
+		});	
+		
+		this.registerCapability('measure_temperature', CLUSTER.TEMPERATURE_MEASUREMENT, {
+			getOpts: {
+				getOnOnline: true,
+				getOnStart: true
+			},
+			reportOpts: {
+				configureAttributeReporting: {
+					minInterval: 0, // No minimum reporting interval
+					maxInterval: 1800 , // Maximally every ~30 minutes
+					minChange: 0.1, // Report when value changed by 0.1
+				},
+			},
+		})
+	}	
 	}
 
 	convertVoltageToPct(voltage) {
